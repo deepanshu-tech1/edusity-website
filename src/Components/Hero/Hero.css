@@ -1,0 +1,89 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8, 0, 58, 0.4), rgba(8, 0, 58, 0.4)), url('../../assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Prevent edge overflow on mobile */
+}
+
+.herotext {
+  text-align: center;
+  max-width: 800px;
+}
+
+.herotext h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.herotext p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+}
+
+.btn img {
+  width: 35px;
+  margin-left: 10px;
+}
+
+/* 🔽 Responsive Styles */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .herotext h1 {
+    font-size: 42px;
+  }
+
+  .herotext p {
+    font-size: 16px;
+  }
+
+  .btn img {
+    width: 28px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .herotext h1 {
+    font-size: 32px;
+  }
+
+  .herotext p {
+    font-size: 14px;
+  }
+
+  .btn img {
+    width: 24px;
+    margin-left: 6px;
+  }
+}
+
+/*  add media query */
+
+@media (max-width:850px) {
+  .herotext h1{
+    font-size: 40px;
+  }
+  
+}
+@media (max-width:650px) {
+  .herotext h1{
+    font-size: 30px;
+    max-width: 400px;
+    margin: auto;
+  }
+  .herotext p{
+    font-size: 14px;
+    margin: 15px auto 30px;
+  }
+  
+}
+
+
